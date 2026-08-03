@@ -266,6 +266,15 @@
 
   :focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 
+  .lang-switch{display:flex;align-items:center;gap:0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em;margin-right:6px;}
+  .lang-switch a{padding:6px 9px;border:1px solid rgba(245,247,248,0.22);color:rgba(245,247,248,0.5);transition:all .2s;display:flex;align-items:center;}
+  .lang-switch a:first-child{border-radius:2px 0 0 2px;border-right:none;}
+  .lang-switch a:last-child{border-radius:0 2px 2px 0;}
+  .lang-switch a:hover{color:var(--fog);}
+  .lang-switch a.active{color:var(--blue);border-color:var(--blue);background:rgba(131,152,242,0.1);}
+  @media (max-width:520px){.lang-switch{display:none;}}
+
+
   /* ---------- CONTACT PAGE ---------- */
   .contact-hero{
     position:relative;padding:190px 0 90px;overflow:hidden;color:var(--cloud);
@@ -344,6 +353,7 @@
     <a href="index.html#credentials">Om mig</a>
     <a href="contact.html">Kontakt</a>
   </div>
+  <div class="lang-switch"><a href="contact.html" class="active" aria-label="Dansk"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#C8102E"/><rect x="11" width="6" height="28" fill="#fff"/><rect y="11" width="37" height="6" fill="#fff"/></svg></a><a href="contact.de.html" aria-label="Deutsch"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="9.34" y="0" fill="#000"/><rect width="37" height="9.33" y="9.34" fill="#DD0000"/><rect width="37" height="9.33" y="18.67" fill="#FFCE00"/></svg></a></div>
   <a href="contact.html" class="nav-cta">Få et tilbud</a>
 </nav>
 
