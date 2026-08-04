@@ -112,7 +112,7 @@
   }
   .hero-top-strip{position:relative;z-index:2;}
   .hero-top-strip .wrap{padding-top:14px;}
-  .hero-body{position:relative;z-index:2;padding-top:200px;}
+  .hero-body{position:relative;z-index:2;padding-top:236px;}
   .hero .wrap{width:100%;display:flex;flex-direction:column;align-items:flex-start;}
   .eyebrow{
     font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;
@@ -511,6 +511,16 @@
   .c-dots{display:flex;justify-content:center;gap:6px;padding:10px 0 0;}
   .c-dot{width:6px;height:6px;border-radius:50%;background:rgba(238,242,245,0.2);cursor:pointer;border:none;transition:background .2s;}
   .c-dot.active{background:#5686d6;}
+
+  .nav-eyebrow{
+    position:fixed;top:146px;left:0;right:0;z-index:49;
+    background:rgba(27,22,41,0.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(131,152,242,0.18);
+    color:rgba(238,242,245,0.7);
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:0.12em;
+    text-transform:uppercase;text-align:center;
+    padding:8px 0;
+  }
 </style>
 </head>
 <body>
@@ -543,7 +553,6 @@
 <header class="hero">
   <div class="hero-body">
     <div class="wrap">
-      <div class="eyebrow">A1, A2 & A3 &middot; Vollversichert</div>
       <h1>Sparen Sie Zeit und Geld mit <em>professionellen Drohnenleistungen.</em></h1>
       <div class="hero-inner">
       <div class="hero-text">
