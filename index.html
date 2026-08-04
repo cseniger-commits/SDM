@@ -74,23 +74,6 @@
   .nav-cta:hover{background:var(--blue);border-color:var(--blue);color:#0a0910;}
   @media (max-width:720px){ .nav-links{display:none;} }
 
-  /* ---------- TELEMETRY STRIP (signature element) ---------- */
-  .telemetry{
-    display:flex;flex-wrap:wrap;gap:0;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12px;letter-spacing:0.02em;
-  }
-  .telemetry .field{
-    display:flex;flex-direction:column;gap:4px;
-    padding:0 22px;border-left:1px solid var(--line);
-  }
-  .telemetry .field:first-child{padding-left:0;border-left:none;}
-  .telemetry .k{opacity:0.55;font-size:10px;text-transform:uppercase;letter-spacing:0.12em;}
-  .telemetry .v{font-size:13px;color:var(--blue);}
-  .telemetry.dark .field{border-left-color:var(--line-dark);}
-  .telemetry.dark .k{color:var(--steel-light);opacity:0.9;}
-  .telemetry.dark .v{color:var(--blue-dim);}
-
   /* ---------- HERO ---------- */
   .hero{
     position:relative;min-height:100vh;
@@ -163,11 +146,6 @@
     transition:border-color .2s;
   }
   .btn-ghost:hover{border-color:var(--blue);}
-  .hero-bottom{
-    position:relative;z-index:2;
-    border-top:1px solid var(--line);
-    padding:24px 0 26px;margin-top:92px;
-  }
 
   /* ---------- SECTION HEADERS ---------- */
   .section{padding:140px 0;}
@@ -381,14 +359,7 @@
     </div>
   </div>
 
-  <div class="hero-bottom">
-    <div class="wrap telemetry">
-      <div class="field"><span class="k">Bredde, Længde</span><span class="v">39.0997° N, 94.5786° V</span></div>
-      <div class="field"><span class="k">Fly</span><span class="v">Multirotor / fastvinget</span></div>
-      <div class="field"><span class="k">Dækning</span><span class="v">Regionalt &amp; opgaver hos kunden</span></div>
-    </div>
-  </div>
-</header>
+  </header>
 
 <section class="services" id="services">
   <div class="wrap">
