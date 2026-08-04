@@ -112,7 +112,7 @@
   }
   .hero-top-strip{position:relative;z-index:2;}
   .hero-top-strip .wrap{padding-top:14px;}
-  .hero-body{position:relative;z-index:2;padding-top:60px;}
+  .hero-body{position:relative;z-index:2;padding-top:0px;}
   .hero .wrap{width:100%;display:flex;flex-direction:column;align-items:flex-start;}
   .eyebrow{
     font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;
@@ -124,6 +124,7 @@
     font-size:38px;
     font-weight:700;line-height:0.98;letter-spacing:-0.02em;
     max-width:900px;
+    margin-top:-220px;
   }
   .hero h1 em{font-style:normal;color:var(--blue);}
   .hero p.lede{
@@ -521,6 +522,7 @@
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links">
+    <a href="index.html">Hjem</a>
     <a href="#services">Ydelser</a>
     <a href="#process">Proces</a>
     <a href="#credentials">Om mig</a>
@@ -532,6 +534,7 @@
 </nav>
 
 <div id="mobile-menu" class="mobile-menu" style="display:none;opacity:0;" role="dialog" aria-modal="true">
+  <a href="index.html" onclick="closeMenu()">Hjem</a>
   <a href="#services" onclick="closeMenu()">Ydelser</a>
   <a href="#process" onclick="closeMenu()">Proces</a>
   <a href="#credentials" onclick="closeMenu()">Om mig</a>
