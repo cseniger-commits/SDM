@@ -74,23 +74,6 @@
   .nav-cta:hover{background:var(--blue);border-color:var(--blue);color:#0a0910;}
   @media (max-width:720px){ .nav-links{display:none;} }
 
-  /* ---------- TELEMETRY STRIP (signature element) ---------- */
-  .telemetry{
-    display:flex;flex-wrap:wrap;gap:0;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12px;letter-spacing:0.02em;
-  }
-  .telemetry .field{
-    display:flex;flex-direction:column;gap:4px;
-    padding:0 22px;border-left:1px solid var(--line);
-  }
-  .telemetry .field:first-child{padding-left:0;border-left:none;}
-  .telemetry .k{opacity:0.55;font-size:10px;text-transform:uppercase;letter-spacing:0.12em;}
-  .telemetry .v{font-size:13px;color:var(--blue);}
-  .telemetry.dark .field{border-left-color:var(--line-dark);}
-  .telemetry.dark .k{color:var(--steel-light);opacity:0.9;}
-  .telemetry.dark .v{color:var(--blue-dim);}
-
   /* ---------- HERO ---------- */
   .hero{
     position:relative;min-height:100vh;
@@ -367,11 +350,6 @@
 
 <header class="contact-hero">
   <div class="wrap">
-    <div class="telemetry" style="margin-bottom:26px;">
-      <div class="field"><span class="k">Status</span><span class="v">Startbereit</span></div>
-      <div class="field"><span class="k">Antwortzeit</span><span class="v">unter 1 Werktag</span></div>
-      <div class="field"><span class="k">Einsatzgebiet</span><span class="v">Regional</span></div>
-    </div>
     <div class="eyebrow">Kontakt</div>
     <h1>Sagen Sie mir, was Sie<br><em>in die Luft</em> bringen möchten.</h1>
     <p class="lede">Füllen Sie das Formular aus oder schreiben Sie mir direkt — Sie hören innerhalb eines Werktags von einem Piloten, nicht von einem Anrufbeantworter.</p>
