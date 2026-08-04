@@ -189,12 +189,6 @@
   @media (max-width:520px){.fb-link{display:none;}}
 
 
-  .lang-switch{display:flex;align-items:center;gap:0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em;margin-right:6px;}
-  .lang-switch a{padding:6px 9px;border:1px solid rgba(245,247,248,0.22);color:rgba(245,247,248,0.5);transition:all .2s;display:flex;align-items:center;}
-  .lang-switch a:first-child{border-radius:2px 0 0 2px;border-right:none;}
-  .lang-switch a:last-child{border-radius:0 2px 2px 0;}
-  .lang-switch a:hover{color:var(--blue);border-color:var(--blue);}
-  .lang-switch a.active{color:var(--blue);border-color:var(--blue);background:rgba(131,152,242,0.1);}
   
   .contact-hero::after{
     content:"";position:absolute;z-index:1;pointer-events:none;
@@ -309,8 +303,7 @@
     .nav-links{display:none;}
     .nav-cta{display:none;}
     .fb-link{display:none;}
-    .lang-switch{display:flex;}
-
+  
     /* layout */
     .wrap{padding:0 16px;}
 
@@ -373,8 +366,7 @@
   @media (max-width:380px){
     h1{font-size:26px;}
     .stats{grid-template-columns:1fr;}
-    .lang-switch a{padding:5px 7px;}
-  }
+    }
 
   /* ── HAMBURGER ── */
   .hamburger{
@@ -433,8 +425,38 @@
     .nav-links{display:none;}
     .nav-cta{display:none;}
     .fb-link{display:none;}
-    .lang-switch{display:none;}
+    }
+
+
+  /* ── LANGUAGE DROPDOWN ── */
+  .lang-switch{position:relative;display:flex;align-items:center;margin-right:6px;}
+  .lang-btn{
+    display:flex;align-items:center;gap:6px;
+    background:none;border:1px solid rgba(245,247,248,0.22);border-radius:2px;
+    padding:6px 10px;cursor:pointer;color:rgba(245,247,248,0.6);
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em;
+    transition:all .2s;
   }
+  .lang-btn:hover,.lang-btn.open{color:var(--blue);border-color:var(--blue);}
+  .lang-btn svg{flex-shrink:0;}
+  .lang-btn .chevron{font-size:8px;margin-left:2px;transition:transform .2s;}
+  .lang-btn.open .chevron{transform:rotate(180deg);}
+  .lang-dropdown{
+    position:absolute;top:calc(100% + 6px);left:0;
+    background:#1b1629;border:1px solid rgba(131,152,242,0.25);border-radius:4px;
+    overflow:hidden;display:none;min-width:100%;z-index:100;
+    box-shadow:0 8px 24px rgba(0,0,0,0.4);
+  }
+  .lang-dropdown.open{display:block;}
+  .lang-dropdown a{
+    display:flex;align-items:center;gap:8px;
+    padding:9px 14px;color:rgba(245,247,248,0.7);
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em;
+    transition:background .15s,color .15s;white-space:nowrap;
+  }
+  .lang-dropdown a:hover{background:rgba(131,152,242,0.12);color:var(--blue);}
+  .lang-dropdown a.active{color:var(--blue);}
+  @media(max-width:600px){.lang-switch{display:none;}}
 
 </style>
 </head>
@@ -451,7 +473,7 @@
     <a href="index.en.html#credentials">About me</a>
     <a href="contact.en.html">Contact</a>
   </div>
-  <div class="lang-switch"><a href="contact.html" aria-label="Dansk"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#C8102E"/><rect x="11" width="6" height="28" fill="#fff"/><rect y="11" width="37" height="6" fill="#fff"/></svg></a><a href="contact.de.html" aria-label="Deutsch"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="9.34" y="0" fill="#000"/><rect width="37" height="9.33" y="9.34" fill="#DD0000"/><rect width="37" height="9.33" y="18.67" fill="#FFCE00"/></svg></a><a href="contact.en.html" aria-label="English" class="active"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#012169"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#fff" stroke-width="4.67"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#C8102E" stroke-width="2.8"/><path d="M18.5 0 V28 M0 14 H37" stroke="#fff" stroke-width="7.78"/><path d="M18.5 0 V28 M0 14 H37" stroke="#C8102E" stroke-width="4.67"/></svg></a></div>
+  <div class="lang-switch"><button class="lang-btn" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#012169"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#fff" stroke-width="4.67"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#C8102E" stroke-width="2.8"/><path d="M18.5 0 V28 M0 14 H37" stroke="#fff" stroke-width="7.78"/><path d="M18.5 0 V28 M0 14 H37" stroke="#C8102E" stroke-width="4.67"/></svg> <span class="chevron">▼</span></button><div class="lang-dropdown"><a href="contact.html"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#C8102E"/><rect x="11" width="6" height="28" fill="#fff"/><rect y="11" width="37" height="6" fill="#fff"/></svg> Dansk</a><a href="contact.de.html"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="9.34" y="0" fill="#000"/><rect width="37" height="9.33" y="9.34" fill="#DD0000"/><rect width="37" height="9.33" y="18.67" fill="#FFCE00"/></svg> Deutsch</a><a href="contact.en.html" class="active"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#012169"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#fff" stroke-width="4.67"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#C8102E" stroke-width="2.8"/><path d="M18.5 0 V28 M0 14 H37" stroke="#fff" stroke-width="7.78"/><path d="M18.5 0 V28 M0 14 H37" stroke="#C8102E" stroke-width="4.67"/></svg> English</a></div></div>
   <a href="https://www.facebook.com/profile.php?id=61591802610896" target="_blank" rel="noopener" class="fb-link" aria-label="Facebook"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34v7.03C18.34 21.24 22 17.08 22 12.06z"/></svg></a>
   <a href="contact.en.html" class="nav-cta">Get a quote</a>
 </nav>
@@ -608,6 +630,24 @@ function closeMenu(){
   if(btn){btn.classList.remove('open');}
   if(m){m.style.opacity='0';document.body.classList.remove('menu-open');setTimeout(function(){m.style.display='none';},300);}
 }
+</script>
+
+
+<script>
+(function(){
+  var btn = document.querySelector('.lang-btn');
+  var dd = document.querySelector('.lang-dropdown');
+  if(!btn||!dd) return;
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    btn.classList.toggle('open');
+    dd.classList.toggle('open');
+  });
+  document.addEventListener('click', function(){
+    btn.classList.remove('open');
+    dd.classList.remove('open');
+  });
+})();
 </script>
 
 </body>
