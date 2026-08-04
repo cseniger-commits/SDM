@@ -534,12 +534,13 @@
     <a href="#credentials">Über mich</a>
     <a href="contact.de.html">Kontakt</a>
   </div>
-  <div class="lang-switch"><button class="lang-btn" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="9.34" y="0" fill="#000"/><rect width="37" height="9.33" y="9.34" fill="#DD0000"/><rect width="37" height="9.33" y="18.67" fill="#FFCE00"/></svg> <span class="chevron">▼</span></button><div class="lang-dropdown"><a href="index.html"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#C8102E"/><rect x="11" width="6" height="28" fill="#fff"/><rect y="11" width="37" height="6" fill="#fff"/></svg> Dansk</a><a href="index.de.html" class="active"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="9.34" y="0" fill="#000"/><rect width="37" height="9.33" y="9.34" fill="#DD0000"/><rect width="37" height="9.33" y="18.67" fill="#FFCE00"/></svg> Deutsch</a><a href="index.en.html"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#012169"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#fff" stroke-width="4.67"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#C8102E" stroke-width="2.8"/><path d="M18.5 0 V28 M0 14 H37" stroke="#fff" stroke-width="7.78"/><path d="M18.5 0 V28 M0 14 H37" stroke="#C8102E" stroke-width="4.67"/></svg> English</a></div></div>
+  <div class="lang-switch"><button class="lang-btn" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#C8102E"/><rect x="11" width="6" height="28" fill="#fff"/><rect y="11" width="37" height="6" fill="#fff"/></svg> <span class="chevron">▼</span></button><div class="lang-dropdown"><a href="index.html" class="active"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#C8102E"/><rect x="11" width="6" height="28" fill="#fff"/><rect y="11" width="37" height="6" fill="#fff"/></svg> Dansk</a><a href="index.de.html"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="9.34" y="0" fill="#000"/><rect width="37" height="9.33" y="9.34" fill="#DD0000"/><rect width="37" height="9.33" y="18.67" fill="#FFCE00"/></svg> Deutsch</a><a href="index.en.html"><svg viewBox="0 0 37 28" width="19" height="14" xmlns="http://www.w3.org/2000/svg"><rect width="37" height="28" fill="#012169"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#fff" stroke-width="4.67"/><path d="M0 0 L37 28 M37 0 L0 28" stroke="#C8102E" stroke-width="2.8"/><path d="M18.5 0 V28 M0 14 H37" stroke="#fff" stroke-width="7.78"/><path d="M18.5 0 V28 M0 14 H37" stroke="#C8102E" stroke-width="4.67"/></svg> English</a></div></div>
   <a href="https://www.facebook.com/profile.php?id=61591802610896" target="_blank" rel="noopener" class="fb-link" aria-label="Facebook"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34v7.03C18.34 21.24 22 17.08 22 12.06z"/></svg></a>
   <a href="contact.de.html" class="nav-cta">Angebot anfordern</a>
 </nav>
 
 <div id="mobile-menu" class="mobile-menu" style="display:none;opacity:0;" role="dialog" aria-modal="true">
+  <a href="index.de.html" onclick="closeMenu()">Startseite</a>
   <a href="#services" onclick="closeMenu()">Leistungen</a>
   <a href="#process" onclick="closeMenu()">Ablauf</a>
   <a href="#credentials" onclick="closeMenu()">Über mich</a>
@@ -551,7 +552,7 @@
 <header class="hero">
   <div class="hero-body">
     <div class="wrap">
-      <h1>Sparen Sie Zeit und Geld mit <em>professionellen Drohnenleistungen.</em></h1>
+      <h1>Sparen Sie Zeit und Geld mit<br><em>professionellen Drohnenleistungen.</em></h1>
       <div class="hero-inner">
       <div class="hero-text">
       <p class="lede">Seniger Drone Media übernimmt Luftaufnahmen, Kartierung und Inspektionen für Teams, die brauchen, was oberhalb der Erdgeschossebene liegt — schnell geliefert, sicher geflogen und beim ersten Mal richtig gefilmt.</p>
@@ -594,7 +595,7 @@
         <span class="code">SOLCELLER</span>
         <div>
           <h3>Solaranlage-Fehlersuche</h3>
-          <p>Drohnen-Thermografie ist die effektivste Methode zum schnellen Scannen großer Panelflächen und zum Aufspüren versteckter Defekte ohne physischen Kontakt. Wenn eine Zelle oder ein String fehlerhaft ist, steigt der elektrische Widerstand — dies erzeugt Wärme, die eine hochauflösende Thermalkamera sofort als leuchtende Hotspots erfasst.</p>
+          <p>Drohnen-Thermografie ist die effektivste Methode zum schnellen Scannen großer Panelflächen und zum Aufspüren versteckter Defekte ohne physischen Kontakt. Wenn eine Zelle oder ein String fehlerhaft ist, steigt der Widerstand — dies erzeugt Wärme, die eine hochauflösende Thermalkamera als leuchtende Hotspots erfasst.</p>
         </div>
       </div>
       <div class="service-card reveal">
@@ -683,7 +684,7 @@
       <div class="stat-grid reveal">
         <div class="stat"><div class="num">Part 107</div><div class="label">A1/A2/A3-zertifizierter Drohnenpilot</div></div>
         <div class="stat"><div class="num">$2M</div><div class="label">Betriebshaftpflichtversicherung</div></div>
-        <div class="stat"><div class="num">48 Stunden</div><div class="label">Typische Lieferzeit</div></div>
+        <div class="stat"><div class="num">48 Std.</div><div class="label">Typische Lieferzeit</div></div>
         <div class="stat"><div class="num">0</div><div class="label">Verpasste Flugfenster bisher</div></div>
       </div>
     </div>
@@ -694,7 +695,7 @@
   <div class="wrap">
     <div class="reveal">
       <h2>Bereit, es in die Luft zu bringen?</h2>
-      <p>Senden Sie mir den Standort und Ihre Wünsche für die Aufnahmen. Ich melde mich mit einem Flugplan und einem Preis innerhalb eines Werktags zurück.</p>
+      <p>Senden Sie mir den Standort und Ihre Wünsche. Ich melde mich mit einem Flugplan und einem Preis innerhalb eines Werktags zurück.</p>
       <div class="hero-actions">
         <a href="contact.html" class="btn-primary">Angebot anfordern</a>
         <a href="#services" class="btn-ghost">Meine Leistungen ansehen</a>
@@ -726,11 +727,11 @@
 </script>
 
 
-<div id="cookie-banner" role="dialog" aria-label="Cookie-Einwilligung">
-  <p>Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und den Website-Traffic zu analysieren. Lesen Sie unsere <a href="#">Datenschutzrichtlinie</a>.</p>
+<div id="cookie-banner" role="dialog" aria-label="Cookie-samtykke">
+  <p>Vi bruger cookies til at forbedre din oplevelse og analysere trafikken på siden. Læs vores <a href="#">privatlivspolitik</a>.</p>
   <div class="cookie-btns">
-    <button class="cookie-decline" onclick="cookieChoice(false)">Ablehnen</button>
-    <button class="cookie-accept" onclick="cookieChoice(true)">Alle akzeptieren</button>
+    <button class="cookie-decline" onclick="cookieChoice(false)">Afvis</button>
+    <button class="cookie-accept" onclick="cookieChoice(true)">Accepter alle</button>
   </div>
 </div>
 
